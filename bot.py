@@ -617,6 +617,7 @@ async def on_format_selected(call: CallbackQuery):
 
     choice = call.data.split(":", 1)[1]
     url = job.url
+    bot = "@YouTubevideoDownloaderNewbot"
 
     await call.message.edit_text("⏳ Готую завантаження...")
 
@@ -661,7 +662,7 @@ async def on_format_selected(call: CallbackQuery):
             )
             return
 
-        caption = f"Завантажено з: {url}\n<b>Формат:</b> {note}"
+        caption = f"Завантажено з: {bot}\n<b>Формат:</b> {note}"
         try:
             if choice == "audio" or file_path.suffix.lower() in {".mp3", ".m4a"}:
                 await bot.send_audio(
