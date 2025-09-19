@@ -1,0 +1,40 @@
+
+---
+
+## 📄 `.gitignore`
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs / caches
+*.log
+*.sqlite3
+*.db
+
+# Env variables
+.env
+
+# yt-dlp temp files
+*.part
+*.ytdl
+*.webm
+*.mp4.part
